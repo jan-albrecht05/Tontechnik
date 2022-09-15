@@ -62,6 +62,9 @@ img{
     color: var(--red);
 }
 @media (max-width: 700px) {
+    #header{
+        position:unset ;
+    }
     #navbar{
         flex-direction: column;
         width: 100%;
