@@ -11,6 +11,7 @@ function changetodark(){
     document.getElementById("content").style.color = white;
     document.getElementById("forlight").style.display = block;
     document.getElementById("fordark").style.display = none;
+    //document.getElementById("reiter").querySelector('.reiter').style.color = white;
 }
 function changetolight(){
     document.getElementById("body").style.backgroundColor = white;
@@ -19,4 +20,5 @@ function changetolight(){
     document.getElementById("content").style.color = black;
     document.getElementById("forlight").style.display = none;
     document.getElementById("fordark").style.display = block;
+    //document.getElementById("navbar").querySelector('.reiter').style.color = white;
 }
