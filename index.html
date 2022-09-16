@@ -10,7 +10,7 @@
     <meta name="author" content="Jan Albrecht">
     <meta name="discripton" content="Wilkommen bei der Tontechnik der Prinz- von- Homburg Schule Neustadt (Dosse)! Was ist die Tontechnik der PvH? Wie bediene ich diese und wie nutze ich sie? Diese und weitere Fragen werden hier beantwortet.">
 </head>
-<body>
+<body id="body">
     <div id="header">
         <div id="navbar">
             <a href="#" class="navlink">
@@ -42,14 +42,13 @@
     </div>
     <div id="main">
         <div id="toggle-switch">
-            <form>
-                <label for="light-toggle">light</label>
-                <input type="radio" id="light-toggle" checked>
-                <input type="radio" id="dark-toggle">
-                <label for="dark-toggle">dark</label>
-            </form>
+            <script src="/js/app.js"></script>
+            <span class="part-sw">Lightmode</span>
+            <span class="part-sw" id="fordark" onclick="changetodark()" alt="tolight"><img src="/img/sw-light.png" class="toggle-sw"></span>
+            <span class="part-sw" id="forlight" onclick="changetolight()" alt="todark"><img src="/img/sw-dark.png" class="toggle-sw"></span>
+            <span class="part-sw">Darkmode</span>
         </div>
-        <div class="content">
+        <div id="content">
             <h2 clas="heading">Willkommen!</h2>
             Hiermit heißen wir euch herzlich auf unserer Homepage Willkommen!<br>
         </div>
