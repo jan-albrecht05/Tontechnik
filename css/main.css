@@ -22,6 +22,8 @@ body{
 a{
     text-decoration: none;
     user-select: none;
+}
+.reiter a{
     color: white;
 }
 img{
@@ -93,6 +95,7 @@ img{
     width: 100%;
     background: transparent;
     color: black;
+    margin-bottom: 10rem;
 }
 #footer{
     height: 3rem;
@@ -109,8 +112,57 @@ img{
 }
 #footer a{
     margin-left: 0.5rem;
+    color: white;
 }
 #footer a:hover{
+    color: var(--red);
+}
+.table{
+    margin-top: 2rem;
+}
+table{
+    width: 100%;
+    background-color: var(--grey);
+}
+td{
+    margin: 0;
+    background-color: white;
+    padding-bottom: 2rem;
+}
+.headtd{
+    padding-left: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0.5rem;
+}
+.date{
+    width: 30%;
+    padding-left: 1.5rem;
+    font-weight: bold;
+}
+.content{
+    width: 70%;
+    padding-left: 1rem;
+}
+.icon{
+    width: 8rem;
+}
+.maillink{
+    width: auto;
+    font-size: black;
+    padding-left: 1.5rem;
+}
+.maillink,
+.icon{
+    padding-bottom: 0;
+}
+li{
+    margin-left: 1.5rem;
+}
+abbr{
+    text-decoration: underline;
+}
+.red:hover{
     color: var(--red);
 }
 @media (max-width: 1000px) {
@@ -130,5 +182,11 @@ img{
         width: inherit;
         margin-bottom: 0.5rem;
         height: max-content;
+    }
+    .date{
+        padding-left: 5px;
+    }
+    .maillink{
+        padding-left: 0.5rem;
     }
 }
