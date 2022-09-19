@@ -4,6 +4,9 @@
     --red: #da251a;
     --back: black;
 }
+:visited{
+    color: #da251a;
+}
 html{
     scroll-behavior: smooth;
     scrollbar-width: thin;
