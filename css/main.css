@@ -8,12 +8,12 @@
     --back: black;
     --background: url(/img/Mixer3.jpg);
     --blue: #0059ff;
+    --m-tabs: #545454;
 }
 [data-theme="dark"]{
     --m-background: #262626;
     --m-fontcolor: #ffffff;
     --m-boxcolor: #afafaf;
-    --lightgrey: #acacac;
     --red: #da251a;
     --background: url(/img/Mixer.jpg);
     --blue: #00a6ff;
@@ -39,9 +39,6 @@ body{
 a{
     text-decoration: none;
     user-select: none;
-}
-.reiter a{
-    color: var(--m-boxcolor);
 }
 img{
     width: 100%;
@@ -82,6 +79,7 @@ img{
 }
 .active{
     color: var(--red);
+    filter: drop-shadow(var(--red) 0px 0px 5px);
 }
 #toggle-switch{
     user-select: none;
@@ -98,6 +96,10 @@ input{
     accent-color: var(--red);
     width: 1.2rem;
     height: 1.2rem;
+}
+input:hover{
+    transform: translateY(-0.2rem);
+    transition: all 0.3s ease-in-out;
 }
 #main{
     margin-top: 1rem;
@@ -163,6 +165,7 @@ td{
 .content{
     width: 70%;
     padding-left: 1rem;
+    padding-right: 0.5rem;
 }
 .icon{
     width: 8rem;
@@ -238,6 +241,41 @@ abbr{
 .window-row a{
     margin: 0.5rem;
 }
+a img:hover{
+    filter: drop-shadow(var(--m-fontcolor) 10px 10px 10px);
+    transform: translateY(-.5rem);
+    transition: all 0.3s ease-in-out;
+}
+#buttons{
+    display: flex;
+}
+.tablink {
+    background-color: var(--m-tabs);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+    margin-top: 2rem;
+}
+.activetab{
+    filter: drop-shadow(0px);
+}
+.tablink:hover {
+    background-color: #353535;
+}
+#for1{
+    background-color: #323232;
+}
+#tab1{
+    display: block;
+}
+#tab2{
+    display:none;
+}
+/*----------------------------*/
 @media (max-width: 1000px) {
     #header{
         position: unset;
