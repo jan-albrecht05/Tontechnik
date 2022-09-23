@@ -77,7 +77,7 @@ img{
     border-left: 1px solid var(--m-boxcolor);
     border-right: 1px solid var(--m-boxcolor);
 }
-.active{
+.navlink .active{
     color: var(--red);
     filter: drop-shadow(var(--red) 0px 0px 5px);
 }
@@ -208,12 +208,13 @@ abbr{
     align-items: center;
     padding: 0.5rem;
 }
-.row{
+.row,
+.row a{
     margin-top: 2rem;
     display: flex;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .row .bild{
     width: auto;
@@ -223,9 +224,14 @@ abbr{
     transform: scale(1.2);
     transition: all 0.5s ease-in-out;
 }
+.row .bild:hover .product-hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
 .row .text{
     width: 40%;
     margin-left: 2rem;
+    color: var(--m-fontcolor);
 }
 #grid{
     margin-top: 5rem;
@@ -275,8 +281,56 @@ a img:hover{
 #tab2{
     display:none;
 }
+.product-row{
+    display: flex;
+}
+.product-image{
+    width: 50%;
+    overflow: hidden;
+}
+.product-image:hover img{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.product-text{
+    padding-top: 5rem;
+    padding-left: 0.5rem;
+    font-size: 20px;
+}
+.pro-li{
+    list-style-type:none;
+    margin-bottom: 0.5rem;
+}
+.pro-li::before{
+    content: "→";
+    margin-right: 0.5rem;
+}
+.info-link{
+    margin-top: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
+    min-height: 2rem;
+    padding: 3px;
+    background-color: var(--lightred);
+    color: var(--m-fontcolor);
+    border: 2.5px solid var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.heading{
+    margin-top: 5rem;
+}
+.slideshow-container{
+    margin-top: 5rem;
+    background-color: #ffffff20;
+    border-radius: 15px;
+}
 /*----------------------------*/
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     #header{
         position: unset;
         height: 11rem;
@@ -300,17 +354,23 @@ a img:hover{
     .maillink{
         padding-left: 0.5rem;
     }
-    .row{
+    .row,
+    .product-row{
         display: block;
         width: auto;
         margin: 0;
         margin-top: 3.5rem;
     }
-    .row .text{
+    .row .text,
+    .product-image,
+    .product-text{
         margin-left: 0;
         width: 100%;
     }
     #grid{
         margin-top: 2rem;
+    }
+    .slideshow-container{
+        background: none;
     }
 }
