@@ -231,6 +231,7 @@ abbr{
 .row .text{
     width: 40%;
     margin-left: 2rem;
+    padding-top: 5rem;
     color: var(--m-fontcolor);
 }
 #grid{
@@ -293,7 +294,7 @@ a img:hover{
     transition: all 0.3s ease-in-out;
 }
 .product-text{
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-left: 0.5rem;
     font-size: 20px;
 }
@@ -355,7 +356,8 @@ a img:hover{
         padding-left: 0.5rem;
     }
     .row,
-    .product-row{
+    .product-row,
+    .row a{
         display: block;
         width: auto;
         margin: 0;
@@ -366,6 +368,9 @@ a img:hover{
     .product-text{
         margin-left: 0;
         width: 100%;
+    }
+    .row .text{
+        padding-top: 0rem;
     }
     #grid{
         margin-top: 2rem;
