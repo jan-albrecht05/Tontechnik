@@ -167,6 +167,12 @@ td{
     padding-left: 1rem;
     padding-right: 0.5rem;
 }
+.check{
+    height: auto;
+    text-align: center;
+    align-items: center;
+    font-size: 200%;
+}
 .icon{
     width: 8rem;
 }
