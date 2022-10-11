@@ -337,6 +337,11 @@ a img:hover{
     background-color: #ffffff20;
     border-radius: 15px;
 }
+.entfällt{
+    font-weight: bold;
+    color: #da251a;
+    margin-top: 2.5rem;
+}
 /*----------------------------*/
 @media (max-width: 1200px) {
     #header{
