@@ -342,6 +342,11 @@ a img:hover{
     color: #da251a;
     margin-top: 2.5rem;
 }
+.video{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*----------------------------*/
 @media (max-width: 1200px) {
     #header{
@@ -390,4 +395,13 @@ a img:hover{
     .slideshow-container{
         background: none;
     }
+    .video{
+        margin-top: -5rem;
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+    iframe{
+        height: 10rem;
+    }
+    
 }
