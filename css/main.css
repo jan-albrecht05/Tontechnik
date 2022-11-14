@@ -358,6 +358,24 @@ a img:hover{
     margin-right: auto;
     animation: fade 1s ease-in;
 }
+#newcontent:after{
+    opacity: 1;
+    content: "1";
+    position: absolute;
+    margin-left: -2rem;
+    font-size: 150%;
+    background-color: orange;
+    color: white;
+    width: 2.2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 0.2rem;
+}
+#newcontent:hover:after{
+    transform: translateY(-.5rem);
+    transition: all 0.3s ease-in-out;    
+}
 /*----------------------------*/
 @media (max-width: 1200px) {
     #header{
@@ -414,5 +432,10 @@ a img:hover{
     iframe{
         height: 10rem;
     }
-    
+    #newcontent:after{
+        width: 1.7rem;
+        height: 1.5rem;
+        font-size: 120%;
+        margin-left: -1.7rem;
+    }
 }
