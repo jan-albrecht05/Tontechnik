@@ -166,6 +166,15 @@ td{
     width: 70%;
     padding-left: 1rem;
     padding-right: 0.5rem;
+    animation: fade 1s ease-in;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .check{
     height: auto;
@@ -221,6 +230,7 @@ abbr{
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
+    animation: fade 1s ease-in;
 }
 .row .bild{
     width: auto;
@@ -346,6 +356,7 @@ a img:hover{
     width: 40%;
     margin-left: auto;
     margin-right: auto;
+    animation: fade 1s ease-in;
 }
 /*----------------------------*/
 @media (max-width: 1200px) {
