@@ -360,7 +360,7 @@ a img:hover{
 }
 #newcontent:after{
     opacity: 1;
-    content: "1";
+    content: "2";
     position: absolute;
     margin-left: -2rem;
     font-size: 150%;
