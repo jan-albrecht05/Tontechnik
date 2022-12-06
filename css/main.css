@@ -237,8 +237,9 @@ abbr{
     overflow: hidden;
 }
 .row .bild:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 0.5s ease-in-out;
+    height: auto;
 }
 .row .bild:hover .product-hover{
     transform: scale(1.05);
@@ -360,7 +361,7 @@ a img:hover{
 }
 #newcontent:after{
     opacity: 1;
-    content: "2";
+    content: "1";
     position: absolute;
     margin-left: -2rem;
     font-size: 150%;
