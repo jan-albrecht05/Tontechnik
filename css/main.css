@@ -440,3 +440,10 @@ a img:hover{
         margin-left: -1.7rem;
     }
 }
+@media (max-width: 400px){
+    table{
+        width: 17rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
