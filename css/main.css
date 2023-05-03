@@ -190,11 +190,16 @@ td{
     min-width: 1rem;
 }
 .maillink{
-    width: auto;
     padding-left: 1.5rem;
 }
 .maillink a{
     color: var(--blue);
+    font-size: 180%;
+    transition: all .15s;
+}
+.maillink a:hover{
+    text-decoration: underline;
+    color: #0059ff;
 }
 .maillink,
 .icon{
@@ -398,9 +403,6 @@ a img:hover{
     }
     .date{
         padding-left: 5px;
-    }
-    .maillink{
-        padding-left: 0.5rem;
     }
     .row,
     .product-row,
