@@ -401,8 +401,24 @@ a img:hover{
         margin-bottom: 0.5rem;
         height: max-content;
     }
+    #tab2{
+        margin-left: -1rem;
+    }
     .date{
         padding-left: 5px;
+        font-size: 80%;
+    }
+    .check{
+        font-size: 150%;
+        width: 1rem;
+    }
+    .headtd.check{
+        font-size: 12px;
+    }
+    .content{
+        font-size: 100%;
+        padding: 2px;
+        padding-bottom: 5px;
     }
     .row,
     .product-row,
@@ -441,11 +457,7 @@ a img:hover{
         font-size: 120%;
         margin-left: -1.7rem;
     }
-}
-@media (max-width: 400px){
-    table{
-        width: 17rem;
-        margin-left: auto;
-        margin-right: auto;
+    .maillink a{
+        font-size: 100%;
     }
 }
