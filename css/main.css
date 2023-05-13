@@ -44,6 +44,9 @@ img{
     width: 100%;
     height: auto;
 }
+.nohover:hover{
+    filter: none;
+}
 #header{
     width: auto;
     margin-left: 10%;
@@ -101,12 +104,14 @@ input:hover{
     transform: translateY(-0.2rem);
     transition: all 0.3s ease-in-out;
 }
+/*main*/
 #main{
     margin-top: 1rem;
     width: auto;
     margin-left: 5%;
     margin-right: 5%;
     padding: 0.5rem;
+    padding-bottom: 3rem;
 }
 #content{
     width: 100%;
@@ -275,6 +280,10 @@ a img:hover{
     transform: translateY(-.5rem);
     transition: all 0.3s ease-in-out;
 }
+a.nohover img:hover{
+    filter: none;
+    transform: none;
+}
 #buttons{
     display: flex;
 }
@@ -400,6 +409,9 @@ a img:hover{
         width: inherit;
         margin-bottom: 0.5rem;
         height: max-content;
+    }
+    #main{
+        padding-bottom: 1rem;
     }
     #tab2{
         margin-left: -1rem;
