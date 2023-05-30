@@ -396,7 +396,7 @@ a.nohover img:hover{
     #header{
         position: unset;
         height: 11rem;
-        border-bottom: 1px solid var(--lightgrey);
+        border-bottom: 1px solid var(--m-boxcolor);
     }
     #navbar{
         flex-direction: column;
