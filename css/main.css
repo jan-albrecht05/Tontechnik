@@ -395,7 +395,7 @@ a.nohover img:hover{
 @media (max-width: 1200px) {
     #header{
         position: unset;
-        height: 11rem;
+        min-height: 12rem;
         border-bottom: 1px solid var(--m-boxcolor);
     }
     #navbar{
