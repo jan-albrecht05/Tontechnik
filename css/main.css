@@ -140,6 +140,16 @@ input:hover{
 #footer a:hover{
     color: var(--red);
 }
+.year{
+    font-size: 120%;
+}
+.year::after{
+    content: " \2197";
+    font-size: 80%;
+    padding-right: 1px;
+    margin-left: 5px;
+    border: 1px solid var(--red);
+}
 .table{
     margin-top: 2rem;
 }
