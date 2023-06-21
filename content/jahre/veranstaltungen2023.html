@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veranstaltungskalender | Tontechnik</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/img/logo_pvh.png">
+    <meta name="author" content="Jan Albrecht">
+    <meta name="discripton" content="Alle Veranstaltungen der Tontechnik der Prinz- von- Homburg Schule Neustadt (Dosse).">
+    <script>
+        location = "/content/jahre/veranstaltungen2022.html";
+    </script>
+</head>
+<body id="body">
+    <div id="header">
+        <div id="navbar">
+            <a href="../../index.html" class="navlink">
+                <div class="reiter">
+                    Home
+                </div>
+            </a>            
+            <a href="#" class="navlink">
+                <div class="reiter active">
+                    Veranstaltungen
+                </div>
+            </a>
+            <a href="/content/bildergalerie.html" class="navlink">
+                <div class="reiter">
+                    Bildergalerie
+                </div>
+            </a> 
+            <a href="/content/technik.html" class="navlink">
+                <div class="reiter">
+                    Technik
+                </div>
+            </a> 
+            <a href="/content/kontakt.html" class="navlink">
+                <div class="reiter">
+                    Kontakt
+                </div>
+            </a> 
+        </div>
+    </div>
+    <div id="main">
+        <div id="toggle-switch">
+            <label class="theme-input" for="checkbox">Dark Mode
+                <input type="checkbox" id="checkbox">
+                </label>
+            <script src="/js/app.js"></script>
+        </div>
+        <div id="content">
+            <h2 class="heading">Veranstaltungen</h2>
+            <a href="/content/jahre/veranstaltungen2022.html" class="year">SJ 2022/23</a><br><br>
+            Auf dieser Seite findet ihr alle kommenden Veranstaltungen.
+            <div id="tabs">
+                <div id="buttons">
+                    <button onclick="opentab1()" id="for1" class="tablink">AG- Stunden</button>
+                    <button onclick="opentab2()" id="for2" class="tablink">Veranstaltungen</button>
+                <script src="/js/tabs.js"></script>
+                </div>
+                <div class="table" id="tab1">
+                    <table id="table">
+                        <tr>
+                            <td class="headtd date">Datum</td>
+                            <td class="headtd content">Unterrichtsinhalt</td>
+                        </tr>
+                        <tr>
+                            <td class="date"></td>
+                            <td class="content">
+                                <h2></h2>
+
+                            </td>
+                        </tr>
+                        <!--
+                        <tr>
+                            <td class="date"></td>
+                            <td class="content">
+                                <h2></h2>
+
+                            </td>
+                        </tr>
+                        -->
+                    </table>
+                </div>
+                <!--Veranstaltungen-->
+                <div class="table" id="tab2">
+                    <table id="table">
+                        <tr>
+                            <td class="headtd date">Datum</td>
+                            <td class="headtd content">Veranstaltung</td>
+                            <td class="headtd check">Erledigt</td>
+                        </tr>
+                        <tr>
+                            <td class="date">26.08.2023</td>
+                            <td class="content">
+                                <h2>Einschulung</h2>
+                            </td>
+                            <td class="check"></td>
+                        </tr>
+                        <!--
+                        <tr>
+                            <td class="date"></td>
+                            <td class="content">
+                                <h2></h2>
+                            </td>
+                            <td class="check"></td>
+                        </tr>
+                        -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Kontakt:<a href="mailto:tontechnikneustadt@gmail.com">Mail</a>
+    </div>
+</body>
+</html>
