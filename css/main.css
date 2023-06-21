@@ -144,11 +144,9 @@ input:hover{
     font-size: 120%;
 }
 .year::after{
-    content: " \2197";
-    font-size: 80%;
-    padding-right: 1px;
-    margin-left: 5px;
-    border: 1px solid var(--red);
+    content: url('/img/link.png');
+    margin-left: .5rem;
+    margin-top: -0.2rem;
 }
 .table{
     margin-top: 2rem;
