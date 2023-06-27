@@ -306,21 +306,14 @@ a.nohover img:hover{
     width: 50%;
     margin-top: 2rem;
 }
+#for2{
+    background-color: #323232;
+}
 .activetab{
     filter: drop-shadow(0px);
 }
 .tablink:hover {
     background-color: #444444;
-}
-#for1{
-    background-color: #323232;
-    text-decoration: underline;
-}
-#tab1{
-    display: block;
-}
-#tab2{
-    display:none;
 }
 .product-row{
     display: flex;
